@@ -118,7 +118,7 @@ DO NOT wrap the JSON in \`\`\` block. Just output raw JSON.`;
     
     return NextResponse.json(
       { error: msg },
-      { status: error.status || 500 }
+      { status: err?.status || 500 }
     );
   }
 }
